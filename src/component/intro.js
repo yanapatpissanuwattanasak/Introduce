@@ -7,10 +7,11 @@ import  { useEffect, useState } from 'react';
 import '../index.css'
 function  Intro()  {
   async function fetchdata() {
-    const res = await fetch('https://yanapatpissanuwattanasak.herokuapp.com/')
+    const res = await fetch('http://localhost:5000/')
     res
     .json()
     .then(res => setdata(res))
+    .then(console.log(data))
   }
   const [data, setdata] = useState("asdasd");
   const eiei= ""
