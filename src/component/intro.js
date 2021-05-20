@@ -7,7 +7,7 @@ import  { useEffect, useState } from 'react';
 import '../index.css'
 function  Intro()  {
   async function fetchdata() {
-    const res = await fetch('http://localhost:5000/')
+    const res = await fetch('/')
     res
     .json()
     .then(res => setdata(res))
