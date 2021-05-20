@@ -7,18 +7,18 @@ import  { useEffect, useState } from 'react';
 import '../index.css'
 function  Intro()  {
   async function fetchdata() {
-    const res = await fetch('http://localhost:5000/')
+    const res = await fetch('https://yanapatpissanuwattanasak.herokuapp.com/')
     res
     .json()
     .then(res => setdata(res))
   }
-  const [data, setdata] = useState("");
+  const [data, setdata] = useState("asdasd");
   const eiei= ""
   useEffect( () =>{
 
     fetchdata()
-    
-  },[]
+    console.log(data)
+  },[""]
   )
   
   
@@ -48,7 +48,7 @@ function  Intro()  {
                 <br/><br/><br/><br/><br/>
                 
                 <FadeInSection>
-                    <h1>{data.data}</h1>
+                    <h1>{JSON.stringify(data.data)}</h1>
                     
                
                
