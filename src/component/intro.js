@@ -23,6 +23,7 @@ function  Intro()  {
   )
   
   
+  
   return (
      
             <div id='intro' className="row d-flex justify-content-center" style={{fontSize:50,height:970,background:'#c0fefc',/*backgroundImage: `url(${'https://storage.cloud.google.com/node-bright/bg.png'})`*/}}>
