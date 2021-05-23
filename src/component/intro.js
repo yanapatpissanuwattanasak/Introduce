@@ -5,11 +5,11 @@ import {Button,Image} from 'react-bootstrap'
 import Ztext from "react-ztext";
 import  { useEffect, useState } from 'react';
 import '../index.css'
-function  Intro()  {
+async function  Intro()  {
   async function fetchdata() {
-    const res = await fetch('/')
+    const res = await fetch('https://yanapat-api.herokuapp.com/')
     res
-    .json()
+    .text()
     .then(res => setdata(res))
     .then(console.log(data))
   }
@@ -21,7 +21,7 @@ function  Intro()  {
     console.log(data)
   },[""]
   )
-  
+
   
   
   return (
