@@ -5,15 +5,15 @@ import {Button,Image} from 'react-bootstrap'
 import Ztext from "react-ztext";
 import  { useEffect, useState } from 'react';
 import '../index.css'
-async function  Intro()  {
+ function  Intro()  {
   async function fetchdata() {
     const res = await fetch('https://yanapat-api.herokuapp.com/')
     res
-    .text()
+    .json()
     .then(res => setdata(res))
-    .then(console.log(data))
+    .then(console.log(res))
   }
-  const [data, setdata] = useState("asdasd");
+  const [data, setdata] = useState("");
   const eiei= ""
   useEffect( () =>{
 
@@ -50,7 +50,7 @@ async function  Intro()  {
                 <br/><br/><br/><br/><br/>
                 
                 <FadeInSection>
-                    <h1>{JSON.stringify(data.data)}</h1>
+                    <h1>{data.data}</h1>
                     
                
                
