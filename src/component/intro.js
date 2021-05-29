@@ -50,7 +50,7 @@ import '../index.css'
                 <br/><br/><br/><br/><br/>
                 
                 <FadeInSection>
-                    <h1>{data.data}</h1>
+                    <h1>Hey Welcom to My Website</h1>
                     
                
                
