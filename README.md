@@ -1,5 +1,6 @@
 👋 Hi, I’m @yanapatpissanuwattanasak
 # Aboue Me : https://yanapatpissanuwattanasak.herokuapp.com/
+เป็นการบอกข้อมูลเกียวกับตัวผมเเละสิ่งที่เคยทำ เเละ ผ่านมารวมผลงานต่างๆ
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
